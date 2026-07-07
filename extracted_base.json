@@ -1,0 +1,242 @@
+{
+  "plan_id": "PLAN-TECHCORP-2024",
+  "doc_type": "BASE_SPD",
+  "effective_date": "2024-01-01",
+  "copay_rules": [
+    {
+      "rule_id": "COPAY_METFORMIN_500",
+      "drug_name": "Metformin 500mg",
+      "drug_ndc": "00071-0155-23",
+      "tier": "Tier-1",
+      "copay_amount": 50,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "generic",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_METFORMIN_1000",
+      "drug_name": "Metformin 1000mg",
+      "drug_ndc": null,
+      "tier": "Tier-1",
+      "copay_amount": 50,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "generic",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_ATORVASTATIN",
+      "drug_name": "Atorvastatin",
+      "drug_ndc": null,
+      "tier": "Tier-1",
+      "copay_amount": 50,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "generic",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_LISINOPRIL",
+      "drug_name": "Lisinopril",
+      "drug_ndc": null,
+      "tier": "Tier-1",
+      "copay_amount": 50,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "generic",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_INSULIN_GLARGINE",
+      "drug_name": "Insulin Glargine",
+      "drug_ndc": "00088-5021-99",
+      "tier": "Tier-2",
+      "copay_amount": 200,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "brand",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_INSULIN_ASPART",
+      "drug_name": "Insulin Aspart",
+      "drug_ndc": "00169-7501-11",
+      "tier": "Tier-2",
+      "copay_amount": 200,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "brand",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_LIPITOR",
+      "drug_name": "Lipitor",
+      "drug_ndc": null,
+      "tier": "Tier-2",
+      "copay_amount": 200,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "brand",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_HUMIRA",
+      "drug_name": "Adalimumab (Humira)",
+      "drug_ndc": "00074-9355-02",
+      "tier": "Tier-4",
+      "copay_amount": 500,
+      "copay_unit": "per_fill_plus_coinsurance",
+      "days_supply": 30,
+      "drug_type": "specialty",
+      "condition": "20% coinsurance after copay",
+      "section_reference": "Section 4.2"
+    },
+    {
+      "rule_id": "COPAY_ELIQUIS",
+      "drug_name": "Apixaban (Eliquis)",
+      "drug_ndc": null,
+      "tier": "Tier-3",
+      "copay_amount": 500,
+      "copay_unit": "per_fill",
+      "days_supply": 30,
+      "drug_type": "brand",
+      "condition": null,
+      "section_reference": "Section 4.2"
+    }
+  ],
+  "pa_requirements": [
+    {
+      "rule_id": "PA_INSULIN_GLARGINE",
+      "drug_name": "Insulin Glargine",
+      "drug_ndc": "00088-5021-99",
+      "pa_required": true,
+      "pa_criteria": "Diagnosis of Type 1 or Type 2 Diabetes confirmed by prescribing physician. Prior trial of basal insulin required.",
+      "pa_duration_months": 12,
+      "pa_waiver_condition": null,
+      "reject_code": "75",
+      "section_reference": "Section 6.1"
+    },
+    {
+      "rule_id": "PA_INSULIN_ASPART",
+      "drug_name": "Insulin Aspart",
+      "drug_ndc": "00169-7501-11",
+      "pa_required": true,
+      "pa_criteria": "Diagnosis of Type 1 Diabetes OR Type 2 with HbA1c > 8 documented within 6 months.",
+      "pa_duration_months": 12,
+      "pa_waiver_condition": null,
+      "reject_code": "75",
+      "section_reference": "Section 6.1"
+    },
+    {
+      "rule_id": "PA_HUMIRA",
+      "drug_name": "Adalimumab (Humira)",
+      "drug_ndc": "00074-9355-02",
+      "pa_required": true,
+      "pa_criteria": "Confirmed diagnosis of RA, Psoriatic Arthritis, or Crohn's Disease. Must document failure of at least one DMARD.",
+      "pa_duration_months": 6,
+      "pa_waiver_condition": null,
+      "reject_code": "75",
+      "section_reference": "Section 6.1"
+    }
+  ],
+  "step_therapy_rules": [
+    {
+      "rule_id": "STEP_ELIQUIS",
+      "target_drug": "Apixaban (Eliquis)",
+      "required_first_step": "Warfarin (generic) \u2014 minimum 30 days trial",
+      "trial_duration_days": 30,
+      "documentation_needed": "Physician attestation of Warfarin failure or contraindication",
+      "reject_code": "76",
+      "section_reference": "Section 8.2"
+    },
+    {
+      "rule_id": "STEP_HUMIRA",
+      "target_drug": "Adalimumab (Humira)",
+      "required_first_step": "Failure of at least one conventional DMARD (Methotrexate or Sulfasalazine)",
+      "trial_duration_days": 90,
+      "documentation_needed": "Documentation of DMARD failure",
+      "reject_code": "76",
+      "section_reference": "Section 8.3"
+    }
+  ],
+  "exclusions": [
+    {
+      "rule_id": "EXCL_COSMETIC",
+      "drug_or_class": "Cosmetic medications",
+      "examples": [
+        "Minoxidil topical",
+        "Tretinoin cream"
+      ],
+      "reject_code": "70",
+      "exception_available": false,
+      "section_reference": "Section 7.1"
+    },
+    {
+      "rule_id": "EXCL_WEIGHT_LOSS",
+      "drug_or_class": "Weight loss drugs (non-prescription)",
+      "examples": [
+        "Orlistat OTC",
+        "weight loss supplements"
+      ],
+      "reject_code": "70",
+      "exception_available": false,
+      "section_reference": "Section 7.1"
+    },
+    {
+      "rule_id": "EXCL_ERECTILE",
+      "drug_or_class": "Erectile dysfunction drugs",
+      "examples": [
+        "Sildenafil (for ED)",
+        "Tadalafil (for ED)"
+      ],
+      "reject_code": "70",
+      "exception_available": true,
+      "section_reference": "Section 7.1"
+    },
+    {
+      "rule_id": "EXCL_NON_FORMULARY",
+      "drug_or_class": "Non-formulary drugs",
+      "examples": [],
+      "reject_code": "70",
+      "exception_available": true,
+      "section_reference": "Section 7.1"
+    }
+  ],
+  "coverage_limits": [
+    {
+      "rule_id": "LIMIT_DAYS_RETAIL",
+      "limit_type": "days_supply_retail",
+      "max_value": 30,
+      "applies_to": "All retail pharmacy drugs",
+      "reject_code": "76",
+      "section_reference": "Section 4.3"
+    },
+    {
+      "rule_id": "LIMIT_FILLS_QTR",
+      "limit_type": "fills_per_quarter",
+      "max_value": 3,
+      "applies_to": "All retail pharmacy drugs",
+      "reject_code": "76",
+      "section_reference": "Section 4.3"
+    },
+    {
+      "rule_id": "LIMIT_OOP",
+      "limit_type": "out_of_pocket_annual",
+      "max_value": 3000,
+      "applies_to": "Individual member",
+      "reject_code": null,
+      "section_reference": "Section 4.4"
+    }
+  ],
+  "special_coverages": [],
+  "amendment_changes": [],
+  "_mock": true
+}

@@ -53,7 +53,8 @@ The correlation happens through three keys that link everything:
         source_pdf ────────  ties every rule/date to its PDF
         section_ref ───────  ties amendment changes to base rules
 
-Here's the full correlation chain:        
+Here's the full correlation chain:     
+   
 
 Base_Plan_SPD.pdf
     │

@@ -1,0 +1,44 @@
+{
+  "plan_id": "PLAN-TECHCORP-2024",
+  "doc_type": "AMENDMENT",
+  "effective_date": "2024-07-01",
+  "copay_rules": [],
+  "pa_requirements": [],
+  "step_therapy_rules": [],
+  "exclusions": [],
+  "coverage_limits": [],
+  "special_coverages": [],
+  "amendment_changes": [
+    {
+      "change_id": "AMD1_METFORMIN_TIER",
+      "section_amended": "4.2",
+      "drug_name": "Metformin",
+      "change_type": "tier_change",
+      "old_value": "Tier-1, $50",
+      "new_value": "Tier-2, $200",
+      "reason": "Brand reclassification by P&T Committee \u2014 extended-release brand formulations preferred",
+      "effective_date": "2024-07-01"
+    },
+    {
+      "change_id": "AMD1_INSULIN_PA",
+      "section_amended": "6.1",
+      "drug_name": "Insulin Glargine",
+      "change_type": "pa_change",
+      "old_value": "PA always required for all members",
+      "new_value": "PA waived if HbA1c > 9.0 documented within last 6 months. PA still required for HbA1c <= 9.0",
+      "reason": "Expedite access for severe uncontrolled diabetics",
+      "effective_date": "2024-07-01"
+    },
+    {
+      "change_id": "AMD1_HUMIRA_STEP",
+      "section_amended": "8.3",
+      "drug_name": "Adalimumab (Humira)",
+      "change_type": "step_therapy_change",
+      "old_value": "PA required + DMARD failure documentation",
+      "new_value": "PA required + must first try Adalimumab-atto (Amjevita) biosimilar for minimum 60 days",
+      "reason": "Biosimilar first policy to reduce specialty drug costs",
+      "effective_date": "2024-07-01"
+    }
+  ],
+  "_mock": true
+}

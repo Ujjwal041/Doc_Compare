@@ -1,0 +1,58 @@
+{
+  "plan_id": "PLAN-TECHCORP-2024",
+  "doc_type": "SPECIALTY_RIDER",
+  "effective_date": "2024-03-01",
+  "copay_rules": [],
+  "pa_requirements": [],
+  "step_therapy_rules": [],
+  "exclusions": [],
+  "coverage_limits": [],
+  "special_coverages": [
+    {
+      "rule_id": "ONCOLOGY_FLAT_COPAY",
+      "coverage_type": "oncology_rider",
+      "drug_class": "Oncology drugs",
+      "special_copay": 100,
+      "quantity_limit_waived": true,
+      "eligibility_criteria": "Confirmed active cancer diagnosis ICD-10 C00-D49",
+      "section_reference": "Part A.2"
+      "pa_required": true,
+      "step_therapy_waived": true,
+    },
+    {
+      "rule_id": "ONCOLOGY_HERCEPTIN",
+      "coverage_type": "oncology_rider",
+      "drug_class": "Trastuzumab (Herceptin)",
+      "special_copay": 100,
+      "pa_required": true,
+      "step_therapy_waived": true,
+      "quantity_limit_waived": true,
+      "eligibility_criteria": "HER2-positive breast cancer diagnosis",
+      "section_reference": "Part A.2"
+    },
+    {
+      "rule_id": "BIOLOGIC_COSENTYX",
+      "coverage_type": "biologic_rider",
+      "drug_class": "Secukinumab (Cosentyx)",
+      "special_copay": 300,
+      "pa_required": true,
+      "step_therapy_waived": false,
+      "quantity_limit_waived": false,
+      "eligibility_criteria": "Psoriasis, PsA, or AS diagnosis",
+      "section_reference": "Part B.2"
+    },
+    {
+      "rule_id": "BIOLOGIC_STELARA",
+      "coverage_type": "biologic_rider",
+      "drug_class": "Ustekinumab (Stelara)",
+      "special_copay": 300,
+      "pa_required": true,
+      "step_therapy_waived": false,
+      "quantity_limit_waived": false,
+      "eligibility_criteria": "Crohn's disease or Psoriasis diagnosis",
+      "section_reference": "Part B.2"
+    }
+  ],
+  "amendment_changes": [],
+  "_mock": true
+}
